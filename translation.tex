@@ -1,0 +1,25 @@
+% % % % % % % % % % % % % % % % %
+% `ctrl+F` goto 从这里开始
+% % % % % % % % % % % % % % % % %
+
+\documentclass[translation]{ecustbachelorthesis}
+
+\begin{document}
+% 文档初始化
+\docinit
+% 添加标题
+\makethesistitle\makemyinfo
+% #从这里开始# 写文献翻译
+\makethesistitle[外文文献中文标题]\makemyinfo[外文文献作者]
+\begin{abstract}[外文文献的关键词]
+以上的外文文献中文标题等都是可选，具体删除请参考下文。文献翻译的具体格式在规范文档中也没有明确给出，该模板按照论文正文格式排版。
+\end{abstract}
+\section{文献的第一章节}
+要删除外文文献中文标题等，可以看到\verb$.tex$代码中有\verb$\makethesistitle[...]...$和\verb$\begin{abstract}[...]...$这两部分。只要删除或者注释即可。注意不要删除论文本身的标题和个人信息。
+
+注意下面的参考文献，如果没有参考文献，则删除\verb$.tex$文件最后的\verb$\nocite{*}$和\verb$\bibliography{...}$，而且编译生成pdf时只要执行\verb$xelatex filename.tex$即可。
+% 最后的参考文献，如没有则删除\nocite 和 \bibliography，同时注意生成pdf时只需要执行编译tex的命令
+\nocite{*}
+\bibliography{translation}
+这里没有引用参考文献，但用于示例，还是显示了\verb$参考文献$的标题。
+\end{document}
