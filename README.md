@@ -73,11 +73,11 @@ xelatex filename.tex
 
 [link3]: https://raw.githubusercontent.com/dagnaf/ecust-bachelor-thesis-template/master/README.md
 
-[link4]: https://raw.githubusercontent.com/dagnaf/ecust-bachelor-thesis-template/master/thesis.pdf
+[link4]: https://github.com/dagnaf/ecust-bachelor-thesis-template/blob/master/thesis.pdf?raw=true
 
-[link5]: https://raw.githubusercontent.com/dagnaf/ecust-bachelor-thesis-template/master/opening.pdf
+[link5]: https://github.com/dagnaf/ecust-bachelor-thesis-template/blob/master/opening.pdf?raw=true
 
-[link6]: https://raw.githubusercontent.com/dagnaf/ecust-bachelor-thesis-template/master/translation.pdf
+[link6]: https://github.com/dagnaf/ecust-bachelor-thesis-template/blob/master/translation.pdf?raw=true
 
 ## 继续学习LaTeX以外，还能做什么
 
@@ -102,6 +102,6 @@ xelatex filename.tex
 
 [link7]: https://github.com/raychenfj/ecustthesis
 [link8]: https://github.com/raychenfj
-[link9]: https://github.com/raychenfj
+[link9]: https://github.com/scottoasis/ecustthesis
 [link10]: https://github.com/scottoasis
 
