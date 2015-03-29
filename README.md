@@ -24,42 +24,28 @@
 
 ### 了解
 
-- `information.cfg` 填写论文标题、个人信息、中英文摘要和关键词
-- `ecustbachelorthesis.cls` 模板类文件
-- `thesis.tex` 论文文档，可以在上面直接修改套用
-- `opening.tex` 开题报告文档
-- `translation.tex` 文献翻译文档
-- `thesis.bib` 论文中的文献条目
-- `opening.bib` 开题报告中的文献条目
-- `translation.bib` 文献翻译中的文献条目
-- `gbt7714-2005.bst` 参考文献格式，GitHub仓库: [GBT7714-2005-BibTeX-Style][link1]
-- `*.png *.jpg ...` 文档中使用的测试图片
-
-[link1]: https://github.com/Haixing-Hu/GBT7714-2005-BibTeX-Style
+- `ecustbachelorthesis.cls` 模板类文件，不需要修改
+- `GBT7714-2005NLang-UTF8.bst` 参考文献格式，不需要修改
+- `templates/thesis.tex` 论文文档
+- `templates/opening.tex` 开题报告文档
+- `templates/translation.tex` 文献翻译文档
+- `templates/thesis.bib` 论文中的文献条目
+- `templates/opening.bib` 开题报告中的文献条目
+- `templates/translation.bib` 文献翻译中的文献条目
+- `templates/*.png|*.jpg ...` 文档中使用的测试图片
 
 ### 撰写
 
 根据使用文档，可以直接修改提供的`.tex`模板，注意论文的结构
 
+
+同时需要注意到无法满足完全和Word格式一致，建议自行添加`\vspace{}`或者`\vspace*{}`
+
 ### 编译
 
-编译前在`Makefile`中确认源文件名。
+建议使用[LaTeXtools][link11]
 
-下列命令分别生成pdf文件
-
-- `make thesis` 
-- `make translation`
-- `make opening`  或者
-- `make all`
-
-或者直接输入命令
-
-```
-xelatex filename.tex
-bibtex filename.aux
-xelatex filename.tex
-xelatex filename.tex
-```
+[link11]: https://github.com/SublimeText/LaTeXTools
 
 ### 文档
 
@@ -81,27 +67,18 @@ xelatex filename.tex
 
 ## 继续学习LaTeX以外，还能做什么
 
-- [ ] 完成未定义功能
- - [ ] 图 `figure`
- - [ ] 表 `table`
- - [ ] 公式 `equation`
- - [ ] 列表 `enumerate`
+- [X] 完成未定义功能
+ - [X] 图 `figure`
+ - [X] 表 `table`
+ - [X] 公式 `equation`
+ - [X] 列表 `enumerate`
 - [ ] 核对格式差错
 - [ ] 完善代码中的`FIXME`
+- [ ] 添加详细文档
 
 ## License
 
 [GNU GPL v2.0][link2]
 
 [link2]: https://raw.githubusercontent.com/dagnaf/ecust-bachelor-thesis-template/master/LICENS
-
-## 相关项目
-
-* May 14, 2013 [ecustthesis][link7] by [raychenfj][link8]
-* June 16, 2013 [ecustthesis][link9] by [scottoasis][link10]
-
-[link7]: https://github.com/raychenfj/ecustthesis
-[link8]: https://github.com/raychenfj
-[link9]: https://github.com/scottoasis/ecustthesis
-[link10]: https://github.com/scottoasis
 

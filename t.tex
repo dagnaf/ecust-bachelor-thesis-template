@@ -1,0 +1,50 @@
+% !TEX program = xelatex
+% % % % % % % % % % % % % % % % %
+% `ctrl+F` goto 从这里开始
+% % % % % % % % % % % % % % % % %
+
+\documentclass{ecustbachelorthesis}
+\renewcommand{\thesistype}{（文献翻译）}
+\renewcommand{\thesistitle}{华东理工大学本科生毕业论文模板}
+
+\updatecmd
+\usepackage{datetime}
+\hypersetup{
+  pdfinfo={
+    Author={dagnaf},
+    Title={\thesistitle{}\thesistype},
+    CreationDate={D:20150309101424},
+    ModDate={D:\pdfdate},
+    Keywords={华东理工大学;本科生毕业论文;模板},
+    Subject={华东理工大学本科生毕业论文模板}
+  }
+}
+
+\begin{document}
+\label{title:t1}
+\pdfbookmark[-1]{文献翻译1}{title:t1}
+\mktitle{文献翻译1的标题}{文献翻译1的作者}
+\mkabstract{文献翻译1的摘要}{
+文献翻译1的关键词
+}
+
+\chapter{文献的第一章节}
+\begin{chatext}
+
+要删除外文文献中文标题等，可以看到\verb$.tex$代码中有\verb$\makethesistitle[...]...$和\verb$\begin{abstract}[...]...$这两部分。只要删除或者注释即可。注意不要删除论文本身的标题和个人信息。
+
+注意下面的参考文献，如果没有参考文献，则删除\verb$.tex$文件最后的\verb$\nocite{*}$和\verb$\bibliography{...}$。
+
+这里没有引用参考文献，但用于示例，还是显示了\verb$参考文献$的标题。两篇以上的文献翻译在参考文献上有问题，待修改。
+% 最后的参考文献，如没有则删除\nocite 和 \bibliography
+\end{chatext}
+\nocite{*}
+\bibliography{t.bib}
+\clearpage
+\label{title:t2}
+\pdfbookmark[-1]{文献翻译2}{title:t2}
+\mktitle{文献翻译2的标题}{文献翻译2的作者}
+\mkabstract{文献翻译2的摘要}{
+文献翻译2的关键词
+}
+\end{document}

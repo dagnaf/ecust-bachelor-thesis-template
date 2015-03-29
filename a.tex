@@ -1,0 +1,133 @@
+% !TEX program = xelatex
+\documentclass{ecustbachelorthesis}
+% \graphicspath{{img/}}
+% \renewcommand{\thetable}{\arabic{table}}
+% \renewcommand{\thefigure}{\arabic{figure}}
+
+\renewcommand{\thesistype}{}
+\renewcommand{\thesistitle}{华东理工大学本科生毕业论文模板}
+\updatecmd
+\usepackage{datetime}
+\hypersetup{
+  pdfinfo={
+    Author={dagnaf},
+    Title={\thesistitle{}\thesistype},
+    CreationDate={D:20150329160000},
+    ModDate={D:\pdfdate},
+    Keywords={华东理工大学;本科生毕业论文;模板},
+    Subject={华东理工大学本科生毕业论文模板}
+  }
+}
+
+% \usepackage{showframe}
+\begin{document}
+% \label{title:t1}
+% \pdfbookmark[0]{标题}{title:t1}
+% \mktitle{基于MOOC的数据结构课程动态演示系统设计与实现}{计111（10111XXX）dagnaf}
+
+\begin{abstractzh}{华东理工大学，本科生毕业论文，模板}
+这篇文章本身不是论文，而是示例，仅符合论文格式。一方面这是直接使用模板生成，供使用者参考。另一方面也用于模板的基本介绍。模板包括开题报告、文献翻译和论文，项目中附带了相应文件，可以在上面直接修改。本文首先介绍华东理工大学，然后再介绍使用方法。
+\end{abstractzh}
+
+\begin{abstracten}{ECUST, Bachelor's thesis, template}
+This article is NOT a thesis but a sample of the template. On one hand, it uses the template, thus it can be easily adapted into one's own article. On the other hand, it provides some basics about how to use the template including simple directions for figure, tables, equations and bibliography.
+\end{abstracten}
+
+\mktableofcontents
+% \input{z/c1}
+% \input{z/c2}
+% \input{o/c3}
+% \input{o/c4}
+\chapter{简单介绍}
+\section{华东理工大学}
+\begin{sectext}
+华东理工大学原名华东化工学院... 今天，华东理工大学正昂首阔步，在未来十年或者更长一段时间，朝着把学校建设成为国际知名、特色鲜明、多学科高水平研究型大学的总体目标前进\cite{ecust}。
+
+
+\begin{center}
+\setstretch{1.35}
+\vspace{-20pt}
+\begin{longtable}{|l|l|l|l|}
+\caption{华东理工大学各校区}
+\label{tab:ecust} \\
+
+\hline \multicolumn{1}{|l|}{} & \multicolumn{1}{l|}{徐汇} & \multicolumn{1}{l|}{奉贤} & \multicolumn{1}{l|}{金山}\\ \hline
+\endfirsthead
+
+\multicolumn{4}{r}%
+{接表 \ref{tab:ecust}} \\
+\hline \multicolumn{1}{|l|}{} & \multicolumn{1}{l|}{徐汇} & \multicolumn{1}{l|}{奉贤} & \multicolumn{1}{l|}{金山}\\ \hline
+\endhead
+
+\hline \multicolumn{4}{r}{待续}
+\endfoot
+
+\hline
+\endlastfoot
+
+    地址 & 梅陇路130号 & 海思路999号 & 学府路1000号\\ \hline
+    邮编 & 200237     & 201424    & 201512\\
+
+\end{longtable}
+\end{center}
+\vspace{-42pt}
+
+学校有三个校区分别是徐汇校区、奉贤校区和金山科技园区，具体地址如\ref{tab:ecust}所示，基本上本科生3年在奉贤，1年在徐汇。最后大四这一年搬到徐汇后，相比之下，更喜欢徐汇校区。树木绿化都很有味道，校园很美，而且感觉天气多数都是蓝天白云。
+
+虽然宿舍很小，但是生活的还是很愉快的。为什么呢？既然你诚心诚意的问了，我就大发慈悲的告诉你，为了防止世界被破坏，为了守护世界的和平，贯彻爱与真实的邪恶，可爱又迷人的反派角色，武藏，小次郎，我们是穿梭在银河中的火箭队，白洞，白色的明天在等着我们，就是这样\cite{pokemon}。
+\end{sectext}
+
+\section{LaTeX}
+\begin{sectext}
+在LaTeX中使用\verb${\LaTeX}$可以显示出如图\ref{fig:latex}的文字\cite{latex}。那么这一小节就这样结束了，关于LaTeX的详细信息可以在网上查阅相关资料。
+\setlength{\belowcaptionskip}{-10pt}
+\vspace{-7pt}
+\begin{figure}[!htbp]
+  \centering
+  \frame{\includegraphics[width=150pt]{images/latex}}
+  \vspace{-5pt}\caption{LaTeX文字图标}
+  \label{fig:latex}
+\end{figure}
+\end{sectext}
+\chapter{模板使用}
+\section{信息填写}
+\begin{sectext}
+文档待重新修改。
+\end{sectext}
+\section{图、表、公式和列表}
+\begin{sectext}
+这一部分待补全，请直接参考本文模板或者相应内容的使用方法。
+\end{sectext}
+\section{添加引用}
+参考文献使用BibTeX管理，使用的是gbt7714-2005参考文献格式\cite{gbt}。
+\chapter{一级标题}
+\section{二级标题}
+\subsection{三级标题}
+内容
+% 最后的参考文献和致谢
+\nocite{*}
+\bibliography{a.bib}
+% 再 #从这里开始# 写致谢
+\acknowledgment
+致谢另起一页，与正文连续编页码，“致谢”两个字居中，用黑体小二号，段前设置为0磅，段后设置为12磅。致谢内容应实事求是，客观公正。\cite{ecustack}
+
+\end{document}
+
+
+% 毕业设计期间必须做出工程产品一部分或相对完整的工程原型系统。现代软件工程非常强调撰写文档,在开发期间,各阶段都要撰写文档。毕业论文属技术报告型,报告本课题所依据的原理、规范和实现模型所需的环境支持,总体实现方案,各(子)部分的设计与实现,与外部的接口等。但不等于文档集合,毕业论文应该带有论证性。如这个课题当今有几种实现方案、为什么要选择此种方案、本方案有何优缺点等。
+% 论文要突出重点,对核心、独创部分尽可能地详细。要强调系统性,即从分析、设计、实现到测试,每个阶段的重点技术要清楚。特别是测试结果和使用情况是工程型课题最为增色之处,切不可略去。
+% 对工程型论文,强调应用性。例如完成一个不太大的实际项目或在某一个较大的项目中设计并完成一个模块(如应用软件、工具软件或自行设计的板卡、接口等等),然后以工程项目总结或科研报告、或已发表的论文的综合扩展等形式完成论文。
+% 论文应重点收集整理课题的立题背景,需求分析,平台选型,使用的开发工具,系统体系结构,程序模块调用关系,数据结构,算法,实验或测试等内容 。 论文结构一般安排如下:
+% (1)引言或背景 (概述题目背景,实现情况,自己开发的内容或模块) 。
+% (2)一般谈课题意义,综述已有成果,如“谁谁在文献某某中做了什么工作,谁谁在文献某某中有
+% 什么突出贡献”,用“但是”一转,分析存在问题,引出自己工作必要性、意义和价值、创新点和主要思
+% 想、方法和结果。然后用“本文组织如下:第一章....,第四章.....” 作为这段结束。
+% (3)课题的分析设计(包括概要设计和详细设计,应强调系统的整体性,重点描述项目的整体框架,
+% 功能,开发工具,突出自己工作在整体中的位置,对概要设计的细化等。这部分内容是全文的重点)。
+% (4)主要实现及功能的描述(包括模块调用关系,数据结构,算法说明,依据内容多少此部分可安
+% 排两到三节)
+% 。
+% (5)实验或测试(描述数据库设计结果,代码开发原理和过程,实现中遇到和解决的主要问题,系
+% 统的测试,今后的维护和改进等)。
+% (6)总结(全文总结及展望)。
+% 这类工作应进行系统演示。
