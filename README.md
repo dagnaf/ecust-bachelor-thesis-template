@@ -24,20 +24,27 @@
 
 ### 了解
 
+a - article
+
+o - opening
+
+t - translation
+
 - `ecustbachelorthesis.cls` 模板类文件，不需要修改
 - `GBT7714-2005NLang-UTF8.bst` 参考文献格式，不需要修改
-- `templates/thesis.tex` 论文文档
-- `templates/opening.tex` 开题报告文档
-- `templates/translation.tex` 文献翻译文档
-- `templates/thesis.bib` 论文中的文献条目
-- `templates/opening.bib` 开题报告中的文献条目
-- `templates/translation.bib` 文献翻译中的文献条目
-- `templates/*.png|*.jpg ...` 文档中使用的测试图片
+- `a.tex` 论文文档
+- `o.tex` 开题报告文档
+- `t.tex` 文献翻译文档
+- `a.bib` 论文中的文献条目
+- `o.bib` 开题报告中的文献条目
+- `t.bib` 文献翻译中的文献条目
+- `images/*.png|*.jpg ...` 文档中使用的测试图片
 
 ### 撰写
 
 根据使用文档，可以直接修改提供的`.tex`模板，注意论文的结构
 
+可以创建a、o、t三个文件夹分别存放文档内容
 
 同时需要注意到无法满足完全和Word格式一致，建议自行添加`\vspace{}`或者`\vspace*{}`
 
