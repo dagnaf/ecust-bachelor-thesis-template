@@ -1,108 +1,36 @@
 % !TEX program = xelatex
-% % % % % % % % % % % % % % % % %
-% `ctrl+F` goto 从这里开始
-% % % % % % % % % % % % % % % % %
 \documentclass{ecustbachelorthesis}
+% \graphicspath{{img/}}
+% \renewcommand{\thetable}{\arabic{table}}
+% \renewcommand{\thefigure}{\arabic{figure}}
+
+\input{_}
+
 \renewcommand{\thesistype}{（开题报告）}
-\renewcommand{\thesistitle}{华东理工大学本科生毕业论文模板}
+\renewcommand{\thesistitle}{\realthesistitle}
 \updatecmd
 \usepackage{datetime}
 \hypersetup{
   pdfinfo={
-    Author={dagnaf},
+    Author={\realauthorname},
     Title={\thesistitle{}\thesistype},
-    CreationDate={D:20150329160000},
+    CreationDate={D:20150315090000},
     ModDate={D:\pdfdate},
-    Keywords={华东理工大学;本科生毕业论文;模板},
-    Subject={华东理工大学本科生毕业论文模板}
+    Keywords={\realkeywords},
+    Subject={MOOC数据结构课程动态演示系统}
   }
 }
-\begin{document}
+% \usepackage{showframe}
 
+\begin{document}
 \label{title:t1}
 \pdfbookmark[0]{标题}{title:t1}
-\mktitle{\thesistitle}{班级（学号）姓名}
-
-\mkabstract{这篇文章本身不是论文，而是示例，仅符合论文格式。一方面这是直接使用模板生成，供使用者参考。另一方面也用于模板的基本介绍。模板包括开题报告、文献翻译和论文，项目中附带了相应文件，可以在上面直接修改。本文首先介绍华东理工大学，然后再介绍使用方法。
-}{
-华东理工大学，本科生毕业论文，模板
-}
-
-% #从这里开始# 写开题报告
-\chapter{研究背景}
-\section{标题}
-\subsection{标题}
-\begin{subtext}
-
-一级标题（黑体小二号，居中，段前距为12磅），二级标题（宋体四号，段前距为12磅，段后距为0磅，接内容段前距为12磅），三级标题（黑体小四号，段前距为12磅，段后距为0磅），内容（首行缩进二格，宋体小四号）
-\end{subtext}
-\section{标题}
-\subsection{标题}
-\begin{subtext}
-表（宋体小五号粗体，按章编号，例如表2.7为第2章第7个表）
-\begin{center}
-\setstretch{1.35}
-\vspace{-20pt}
-\begin{longtable}{|c|c|c|c|}
-\caption{林可霉素……}
-\label{tab:linc} \\
-
-% \hline \multicolumn{1}{|l|}{} & \multicolumn{1}{l|}{徐汇} & \multicolumn{1}{l|}{奉贤} & \multicolumn{1}{l|}{金山}\\ \hline
-\endfirsthead
-
-% \multicolumn{4}{r}%
-% {接表 \ref{tab:linc}} \\
-% \hline \multicolumn{1}{|l|}{} & \multicolumn{1}{l|}{徐汇} & \multicolumn{1}{l|}{奉贤} & \multicolumn{1}{l|}{金山}\\ \hline
-\endhead
-
-% \hline \multicolumn{4}{r}{待续}
-\endfoot
-
-% \hline
-\endlastfoot
-\hline
-    第1行第1列 & 第1行第2列 & 第1行第3列 & 第1行第4列\\ \hline
-    第2行第1列 & 第2行第2列 & 第2行第3列 & 第2行第4列\\ \hline
-    第3行第1列 & 第3行第2列 & 第3行第3列 & 第3行第4列\\ \hline
-
-\end{longtable}
-\end{center}
-\vspace{-42pt}
-
-如表\ref{tab:linc}所示，这张表格为测试表格，标注格式规范文档。注意格式要求表名位于表格正上方，所以写论文时，要把\verb$\caption{...}$放在\verb$\begin{tabular}...$上面。
-\end{subtext}
-\chapter{文献综述}
-\section{标题}
-\subsection{标题}
-\begin{subtext}
-数学公式（用斜体，按章编号），如公式\ref{eqn:abc}所示，这里可以用\verb$\ref{label}$来具体指代所说的公式，其中\verb$label$需要替换为上下文中设定label名字，例如在\verb$equation$中用\verb$\label{eqn:abc}$来设定该公式的标签（即\verb$label$）。
-\setlength{\abovedisplayskip}{0cm}
-\setlength{\belowdisplayskip}{0cm}
-% \vspace{-17pt}
-\begin{equation}
-A=0.235B+2.68C \label{eqn:abc}
-\end{equation}
-
-另外公式最好还是自己修改行距
-\end{subtext}
-\section{标题}
-\subsection{标题}
-\begin{subtext}
-图（图名位于图的正下方，用宋体小五号粗体，按章编号，图3-1为第3章第1个图）。如图\ref{fig:linc}所示，这张图为测试图，标注来自格式规范文档\cite{ecustjwc}。注意格式要求图名位于图片正下方，所以写论文时，要把\verb$\caption{...}$放在\verb$\includegraphics{...}$下面。
-\setlength{\belowcaptionskip}{-10pt}
-\vspace{-7pt}
-\begin{figure}[!htbp]
-  \centering
-  \frame{\includegraphics{images/img1}}
-  \vspace{-5pt}\caption{林可霉素……}
-  \label{fig:linc}
-\end{figure}
-
-以上格式适用于论文、开题报告和文献翻译。参考文献使用bibtex工具，把文献按格式加入\verb$.bib$文件中，建议使用LaTeXTools编译。
-\end{subtext}
-\chapter{技术路线}
-\chapter{进度安排}
-
-% 最后的参考文献
-\bibliography{o.bib}
+\mktitle{基于MOOC的数据结构课程动态演示系统设计与实现}{\realauthorclass（\realauthornumber）\realauthorname}
+\input{o/abs}
+\input{o/c1}
+\input{o/c2}
+\input{o/c3}
+\input{o/c4}
+\nocite{*}
+\bibliography{a.bib}
 \end{document}

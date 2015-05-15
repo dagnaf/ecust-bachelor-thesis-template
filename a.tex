@@ -3,19 +3,19 @@
 % \graphicspath{{img/}}
 % \renewcommand{\thetable}{\arabic{table}}
 % \renewcommand{\thefigure}{\arabic{figure}}
-
+\input{_}
 \renewcommand{\thesistype}{}
-\renewcommand{\thesistitle}{华东理工大学本科生毕业论文模板}
+\renewcommand{\thesistitle}{\realthesistitle}
 \updatecmd
 \usepackage{datetime}
 \hypersetup{
   pdfinfo={
-    Author={dagnaf},
+    Author={\realauthorname},
     Title={\thesistitle{}\thesistype},
-    CreationDate={D:20150329160000},
+    CreationDate={D:20150315102933},
     ModDate={D:\pdfdate},
-    Keywords={华东理工大学;本科生毕业论文;模板},
-    Subject={华东理工大学本科生毕业论文模板}
+    Keywords={\realkeywords},
+    Subject={MOOC数据结构课程动态演示系统}
   }
 }
 
@@ -23,94 +23,19 @@
 \begin{document}
 % \label{title:t1}
 % \pdfbookmark[0]{标题}{title:t1}
-% \mktitle{基于MOOC的数据结构课程动态演示系统设计与实现}{计111（10111XXX）dagnaf}
-
-\begin{abstractzh}{华东理工大学，本科生毕业论文，模板}
-这篇文章本身不是论文，而是示例，仅符合论文格式。一方面这是直接使用模板生成，供使用者参考。另一方面也用于模板的基本介绍。模板包括开题报告、文献翻译和论文，项目中附带了相应文件，可以在上面直接修改。本文首先介绍华东理工大学，然后再介绍使用方法。
-\end{abstractzh}
-
-\begin{abstracten}{ECUST, Bachelor's thesis, template}
-This article is NOT a thesis but a sample of the template. On one hand, it uses the template, thus it can be easily adapted into one's own article. On the other hand, it provides some basics about how to use the template including simple directions for figure, tables, equations and bibliography.
-\end{abstracten}
-
+\input{a/abs}
 \mktableofcontents
 % \input{z/c1}
 % \input{z/c2}
 % \input{o/c3}
 % \input{o/c4}
-\chapter{简单介绍}
-\section{华东理工大学}
-\begin{sectext}
-华东理工大学原名华东化工学院... 今天，华东理工大学正昂首阔步，在未来十年或者更长一段时间，朝着把学校建设成为国际知名、特色鲜明、多学科高水平研究型大学的总体目标前进\cite{ecust}。
-
-
-\begin{center}
-\setstretch{1.35}
-\vspace{-20pt}
-\begin{longtable}{|l|l|l|l|}
-\caption{华东理工大学各校区}
-\label{tab:ecust} \\
-
-\hline \multicolumn{1}{|l|}{} & \multicolumn{1}{l|}{徐汇} & \multicolumn{1}{l|}{奉贤} & \multicolumn{1}{l|}{金山}\\ \hline
-\endfirsthead
-
-\multicolumn{4}{r}%
-{接表 \ref{tab:ecust}} \\
-\hline \multicolumn{1}{|l|}{} & \multicolumn{1}{l|}{徐汇} & \multicolumn{1}{l|}{奉贤} & \multicolumn{1}{l|}{金山}\\ \hline
-\endhead
-
-\hline \multicolumn{4}{r}{待续}
-\endfoot
-
-\hline
-\endlastfoot
-
-    地址 & 梅陇路130号 & 海思路999号 & 学府路1000号\\ \hline
-    邮编 & 200237     & 201424    & 201512\\
-
-\end{longtable}
-\end{center}
-\vspace{-42pt}
-
-学校有三个校区分别是徐汇校区、奉贤校区和金山科技园区，具体地址如\ref{tab:ecust}所示，基本上本科生3年在奉贤，1年在徐汇。最后大四这一年搬到徐汇后，相比之下，更喜欢徐汇校区。树木绿化都很有味道，校园很美，而且感觉天气多数都是蓝天白云。
-
-虽然宿舍很小，但是生活的还是很愉快的。为什么呢？既然你诚心诚意的问了，我就大发慈悲的告诉你，为了防止世界被破坏，为了守护世界的和平，贯彻爱与真实的邪恶，可爱又迷人的反派角色，武藏，小次郎，我们是穿梭在银河中的火箭队，白洞，白色的明天在等着我们，就是这样\cite{pokemon}。
-\end{sectext}
-
-\section{LaTeX}
-\begin{sectext}
-在LaTeX中使用\verb${\LaTeX}$可以显示出如图\ref{fig:latex}的文字\cite{latex}。那么这一小节就这样结束了，关于LaTeX的详细信息可以在网上查阅相关资料。
-\setlength{\belowcaptionskip}{-10pt}
-\vspace{-7pt}
-\begin{figure}[!htbp]
-  \centering
-  \frame{\includegraphics[width=150pt]{images/latex}}
-  \vspace{-5pt}\caption{LaTeX文字图标}
-  \label{fig:latex}
-\end{figure}
-\end{sectext}
-\chapter{模板使用}
-\section{信息填写}
-\begin{sectext}
-文档待重新修改。
-\end{sectext}
-\section{图、表、公式和列表}
-\begin{sectext}
-这一部分待补全，请直接参考本文模板或者相应内容的使用方法。
-\end{sectext}
-\section{添加引用}
-参考文献使用BibTeX管理，使用的是gbt7714-2005参考文献格式\cite{gbt}。
-\chapter{一级标题}
-\section{二级标题}
-\subsection{三级标题}
-内容
-% 最后的参考文献和致谢
+\chapter{引言}
+\section{背景}
+\subsection{国内}
+\subsection{国外}
+\input{a/ack}
 \nocite{*}
 \bibliography{a.bib}
-% 再 #从这里开始# 写致谢
-\acknowledgment
-致谢另起一页，与正文连续编页码，“致谢”两个字居中，用黑体小二号，段前设置为0磅，段后设置为12磅。致谢内容应实事求是，客观公正。\cite{ecustack}
-
 \end{document}
 
 

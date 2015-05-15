@@ -1,0 +1,37 @@
+% !TEX root = ../../t.tex
+\chapter{现有的算法可视化网站}
+\begin{sectext}
+本节总结了我们对于截至2012年4月不同算法可视化网站的分析。以下的报告不考虑非在线的算法可视化。所有的算法的来自与``高级编程2''这本手册（Halim和Halim，2011）。在分析中，我们发现经典算法和非经典算法数量上的不平衡。经典算法——通常比较简单——例如排序、有序数列的二分查找等，而非经典和少见的算法——通常比较困难——例如树状数组（Fenwick，1994）、有向图的强连通分支（Tarjan，1972），网络的最大流（Edmonds和Karp，1972）等。
+\end{sectext}
+\section{单一可视化}
+\begin{sectext}
+我们把得到的记过分为两类：单一的可视化和统一可视化。表\ref{tab:1}中为单一的现有算法可视化网站，这些网站只有一到三个算法动画，开发者没有可视化其他的算法。这增加了学生的学习的负担，学生们在学习不同算法时不得不访问不同的网站。为了简化表\ref{tab:1}，我们只选择了几个有代表性的经典算法可视化的网站。
+\input{t/1/t1}
+在同一个表中，我们用以下记号强调了三个可能的问题，这些问题源自我们的目标，已经在第一节中列出：
+\begin{itemlist}
+\item N（少见）：这种算法少见，在因特网上用相关关键词搜索后没能得到可视化网站的结果。
+
+\item H（静态，非交互式）：这种算法使用内嵌的例子（包括使用动态的GIF图），用户不能通过输入新的数据来观察算法如何执行。
+
+\item O（技术过时）：这种（过时的）算法可视化使用的是以前的技术（例如Flash、Java小应用程序），不完全支持便携式设备，通过现代的智能手机（例如iPhone）或者平板电脑（例如iPad）不能访问。
+
+\end{itemlist}
+
+\end{sectext}
+\section{统一可视化}
+\begin{sectext}
+除了表\ref{tab:1}中的单一可视化，我们也发现以下的统一可视化，这些可视化网站提供了三个以上的可视化：
+\begin{itemlist}
+\item  \url{algoviz.org} 基本上作为一个网站入口，题够不同算法可视化的网站链接。以后我们的可视化网站也将列入其中。但是，截至2012年4月，一些第三节中列出的算法可视化（例如树状数组、强连通分量等）还没有被列出。
+
+\item  \url{www.ansatt.hig.no/frodeh/algmet/animate.html} 是另外一个网站入口，同样手机了其他可视化网站的链接。（与 \url{algoviz.org} 本质相同）
+
+\item  \url{nova.umuc.edu/~jarc/idsv/} 提供的可视化包括：二叉树、几种图的表示和算法以及排序。
+
+\item  \url{www.csse.monash.edu.au/~dwa/Animations/index.html} 提供的一些算法可视化与 \url{nova.umuc.edu/~jarc/idsv/} 类似。
+
+\item  \url{research.cs.vt.edu/AVresearch/} 提供一部分算法可视化，从2003年到2009年进行维护开发。
+
+\item  \url{www.cs.usfca.edu/~galles/visualization/Algorithms.html} 是最接近统一可视化的网站，与本论文提出的观点最为相近。同时该网站使用HTML5技术。我们会在第三节中突出我们的可视化网站与该网站的不同之处。
+\end{itemlist}
+\end{sectext}

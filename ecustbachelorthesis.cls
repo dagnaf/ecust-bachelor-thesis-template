@@ -20,7 +20,7 @@
 \setmainfont{Times New Roman}
 % 请在主文件中renewcommand以下两个
 \newcommand{\thesistype}{}
-\newcommand{\thesistitle}{基于MOOC的数据结构课程动态演示系统设计与实现}
+\newcommand{\thesistitle}{}
 % 边距基本与word格式一样
 \usepackage[left=2.5cm, right=2.5cm, top=2.8cm, bottom=2.5cm,headheight=15pt, headsep=0.3cm, footskip=0.5cm]{geometry}
 % 引用的格式：上标、方括号、序号

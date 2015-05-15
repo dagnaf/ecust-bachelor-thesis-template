@@ -107,3 +107,9 @@ sympy-plots-for-*.tex/
 
 # xindy
 *.xdy
+
+# pdfs
+*.pdf
+
+# anonymous
+_.tex
