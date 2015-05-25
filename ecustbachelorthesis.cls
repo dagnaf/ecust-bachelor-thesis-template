@@ -120,6 +120,7 @@
   \thispagestyle{head}
   \clearpage
   \pagenumbering{arabic}
+  \pagestyle{plain}
 }
 
 \usepackage{ifthen}
