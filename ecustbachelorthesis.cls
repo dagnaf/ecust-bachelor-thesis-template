@@ -36,6 +36,9 @@
 \usepackage[hang,flushmargin]{footmisc}
 % 设置行距，必须在hyperref前
 \usepackage{setspace}
+% 设置缩进
+\usepackage{indentfirst}
+\setlength{\parindent}{2em}
 % 超链接
 \usepackage[hidelinks,bookmarksnumbered,hypertexnames=false]{hyperref}
 % 脚注回链
